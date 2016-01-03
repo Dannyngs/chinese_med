@@ -71,6 +71,14 @@ require_once 'init.php';
         
 
     </ul>
+      
+     <p class="pagetab text-center">
+         <a href="#"><i class="icon-caret-left"></i></a>
+         <a href="#">1</a>
+         <a href="#">2</a>
+         
+         <a href="#"><i class="icon-caret-right"></i></a>
+      </p> 
 
   </section>
 

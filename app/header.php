@@ -93,11 +93,8 @@
                     <li>
                         <a href="contact.html">聯絡醫師</a></li>
                      <li>
-                        <a href="category.php">語言選擇</a>
-                        <ul>
-                            <li> <a href="category.php">繁體中文</a></li>
-                            <li> <a href="category.php">English</a></li>
-                        </ul>
+                         <a href="#">繁</a>|<a href="#">ENG</a>
+                       
                     </li>
 
                 </ul>

@@ -82,7 +82,7 @@ require_once 'init.php';
                 </section>
                 
                  <section>
-                    <h3>Social media</h3>
+                   
                     <p class="icon">
                         <i class="icon-large icon-facebook-sign" style="margin-right:5px;color:blue"></i> 
                         <a href="#">黎凱明中醫診所</a>

@@ -1802,3 +1802,6 @@ div.orbit-wrapper div.slider-nav span.left {
 }
 
 .pri-right li a{font-weight:bold;color:#000;}
+
+.pagetab a{display:inline-block;padding: 5px;color:darkblue;}
+.pagetab a:hover{color:#C09500}
