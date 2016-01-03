@@ -1788,3 +1788,5 @@ div.orbit-wrapper div.slider-nav span.left {
   border-top: 1px solid #eee;
   margin: 15px -15px;
 }
+
+.pri-right li a{font-weight:bold;color:#000;}

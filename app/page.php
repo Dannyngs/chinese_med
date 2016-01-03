@@ -78,8 +78,15 @@ require_once 'init.php';
 
       <!-- Features -->
       <section>
-       <ol>
-         <li>1.經筋鬆解推拿療法</li>   
+       <ol class="pri-right">
+         <li><a href="">經筋鬆解推拿療法</a></li>
+         <li><a href="">經筋鬆解推拿療法</a></li>
+         <li><a href="">經筋鬆解推拿療法</a></li>
+         <li><a href="">經筋鬆解推拿療法</a></li>
+         <li><a href="">經筋鬆解推拿療法</a></li>
+         <li><a href="">經筋鬆解推拿療法</a></li>
+         <li><a href="">經筋鬆解推拿療法</a></li>
+         <li><a href="">經筋鬆解推拿療法</a></li>
        </ol>
         <ul class="features_icons features">
           <li>
