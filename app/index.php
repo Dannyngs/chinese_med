@@ -56,6 +56,7 @@ $rs = $db->query("SELECT * FROM illness ");
                 <h2 class="text-center"><?php echo $system[$current_lang.'home_content']?></h2>
                 
                 <p><b>治療:</b><br/>
+
               <?php foreach($illnesses as $key=>$ill)
     if($key!=0)echo ",";
 echo  $ill[$current_lang.'_title'];
