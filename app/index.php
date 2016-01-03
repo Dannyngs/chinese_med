@@ -12,11 +12,9 @@ require_once 'init.php';
 ?>
 
 <?php require_once 'header.php' ?>
-<<<<<<< HEAD
-    <!-- Slider joyce-->
-=======
-    <!-- Slider danny -->
->>>>>>> 6629866613a6cb5612c4a7af18aa618244060a47
+
+    <!-- Slider -->
+
     <div class="slider box">
 
         <!-- Slides -->
