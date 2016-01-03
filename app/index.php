@@ -13,7 +13,7 @@ require_once 'init.php';
 
 <?php require_once 'header.php' ?>
 
-    <!-- Slider -->
+    <!-- Slider d-->
 
     <div class="slider box">
 
