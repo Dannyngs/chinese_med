@@ -3,11 +3,10 @@ require_once 'init.php';
 
 
 
-//$rs = $db->query("SELECT * FROM illness ");
-//    $illnesses = $rs->fetchAll();
-//
-//foreach($illnesses as $ill)          
-//echo  $ill[$current_lang.'_title'];
+$rs = $db->query("SELECT * FROM illness ");
+    $illnesses = $rs->fetchAll();
+
+
 
 ?>
 
@@ -57,11 +56,9 @@ require_once 'init.php';
                 <h2 class="text-center">香港註冊中醫師(全科)  香港中文大學中醫學碩士  香港兒童皮膚健康協會(非牟利機構)·創辦人</h2>
                 
                 <p><b>治療:</b><br/>
-                 濕疹  牛皮癬  暗瘡  黃褐斑  黑眼圈  靜脈曲張痛症  風濕痛  痛風  胃痛  腰痛  肩頸痛<br/>
-失眠  抑鬱  眩暈  耳鳴  便秘  中風  糖尿  癌症兒童濕疹  兒童寒背  近視  鼻敏感<br/>
-寒背  扭傷  運動創傷<br/>
-小腦痿縮症  柏金遜症<br/>
-月經病  不孕  婦科疾病  中醫纖體美容
+              <?php foreach($illnesses as $ill)          
+echo  $ill[$current_lang.'_title'];
+?>
                 </p>
                 <a href="#" class="big theme_button">
                     <i class="icon-phone" style="margin-right:10px;"></i>
