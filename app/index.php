@@ -64,7 +64,7 @@ echo  $ill[$current_lang.'_title'];
                 </p>
                 <a href="#" class="big theme_button">
                     <i class="icon-phone" style="margin-right:10px;"></i>
-                    (852)2889 6080</a>
+                    (00852)2889 6080</a>
             </div>
         </section>
 
