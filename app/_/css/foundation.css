@@ -43,7 +43,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 
 p { font-size: 14px; line-height: 1.6; margin-bottom: 17px; }
 p.lead { font-size: 17.5px; line-height: 1.6; margin-bottom: 17px; }
-p img.left, p img { margin: 17px; margin-left: 0; }
+p img.left, p img { //margin: 17px; margin-left: 0; }
 p img.right { margin: 17px; margin-right: 0; }
 
 aside p { font-size: 13px; line-height: 1.35; font-style: italic; }
