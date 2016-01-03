@@ -700,6 +700,8 @@ i.black.big {
   font-weight: normal;
 color:#fff;
 }
+.break-menu{border-left:3px solid #7a7a7a;padding-left:10px;font-size:14px;font-weight: bold;color:#333;margin-bottom:20px}
+.break-menu a{color:#333;}.break-menu a:hover{text-decoration:none;color:#C09500}
 .title p {
   font-size: 16px;
   font-family: "Noticia Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -1011,6 +1013,7 @@ a.read_more:hover i {
 }
 article {
   padding-left: 80px;
+  padding-right: 80px;
 }
 @media only screen and (max-width: 767px) {
   article {
@@ -1553,7 +1556,7 @@ ul.team_small li .social a {
   text-shadow: 0 1px 1px #fff;
 }
 .main_column {
-  float: left;
+  //float: left;
   padding:50px 0 50px 50px;
     margin-top: -40px;
     margin-left:0;
