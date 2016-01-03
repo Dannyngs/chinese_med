@@ -3,11 +3,10 @@ require_once 'init.php';
 
 
 
-//$rs = $db->query("SELECT * FROM illness ");
-//    $illnesses = $rs->fetchAll();
-//
-//foreach($illnesses as $ill)          
-//echo  $ill[$current_lang.'_title'];
+$rs = $db->query("SELECT * FROM illness ");
+    $illnesses = $rs->fetchAll();
+
+
 
 ?>
 
@@ -57,7 +56,13 @@ require_once 'init.php';
                 <h2 class="text-center">香港註冊中醫師(全科)  香港中文大學中醫學碩士  香港兒童皮膚健康協會(非牟利機構)·創辦人</h2>
                 
                 <p><b>治療:</b><br/>
+<<<<<<< HEAD
                  濕疹 
+=======
+              <?php foreach($illnesses as $ill)          
+echo  $ill[$current_lang.'_title'];
+?>
+>>>>>>> refs/remotes/origin/master
                 </p>
                 <a href="#" class="big theme_button">
                     <i class="icon-phone" style="margin-right:10px;"></i>
