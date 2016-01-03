@@ -52,11 +52,12 @@ $rs = $db->query("SELECT * FROM illness ");
         <!-- Call to action -->
         <section class="call_to_action clearfix">
             <div class="row">
-                <h1 class="text-center">黎凱明中醫</h1>
-                <h2 class="text-center">香港註冊中醫師(全科)  香港中文大學中醫學碩士  香港兒童皮膚健康協會(非牟利機構)·創辦人</h2>
+                <h1 class="text-center"><?php echo $system[$current_lang.'home_title']?></h1>
+                <h2 class="text-center"><?php echo $system[$current_lang.'home_content']?></h2>
                 
                 <p><b>治療:</b><br/>
-              <?php foreach($illnesses as $ill)          
+              <?php foreach($illnesses as $key=>$ill)
+    if($key!=0)echo ",";
 echo  $ill[$current_lang.'_title'];
 ?>
                 </p>

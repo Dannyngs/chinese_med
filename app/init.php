@@ -14,11 +14,11 @@
         exit();   
     }
 
-/*
+
         $imgurl ="http://58.96.172.29/newcmweb.hk/themes/exmed/admin/media/images/";
      $rs = $db->query("SELECT* FROM system");
     $system = $rs->fetch();
-    */
+   
    
  
      
