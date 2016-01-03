@@ -52,14 +52,15 @@ $rs = $db->query("SELECT * FROM illness ");
         <!-- Call to action -->
         <section class="call_to_action clearfix">
             <div class="row">
-                <h1 class="text-center"><?php echo $system[$current_lang.'home_title']?></h1>
-                <h2 class="text-center"><?php echo $system[$current_lang.'home_content']?></h2>
+                <h1 class="text-center"><?php echo $system[$current_lang.'_home_title']?></h1>
+                <h2 class="text-center"><?php echo $system[$current_lang.'_home_content']?></h2>
                 
                 <p><b>治療:</b><br/>
 
               <?php foreach($illnesses as $key=>$ill)
-    if($key!=0)echo ",";
+{if($key!=0)echo ",";
 echo  $ill[$current_lang.'_title'];
+}
 ?>
                 </p>
                 <a href="#" class="big theme_button">
