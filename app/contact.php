@@ -16,15 +16,14 @@ require_once 'init.php';
 </style>
 <section class="title box">
 
-  <h2>聯絡我們</h2>
+  <h2><?php echo $lang['contact']?></h2>
  
 </section>
 
     <!-- Map -->
     <section class="map box">
 
-        <div class="map google_map" data-latitude="40.75" data-longitude="-74.0" data-zoom="15"></div>
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.000910511588!2d114.18256504943027!3d22.277955349265834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3404005145455113%3A0xe7842d2010b14e78!2z6aaZ5riv5p2x6KeS5biM5oWO6YGTOOiZn-ijleaZr-WVhualreS4reW_gw!5e0!3m2!1szh-TW!2ssg!4v1451884348563" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
 
 
@@ -41,29 +40,29 @@ require_once 'init.php';
 
                 <!-- Offices -->
                 <section>
-                    <h3>診所地址：</h3>
+                    <h3><?php echo $lang['address']?>：</h3>
                     <p class="icon">
                         <i class="icon-map-marker"></i>
-                       香港銅鑼灣希慎道8號裕景商業中心2樓
+                      <?php echo $system[$current_lang.'_address']?>
                     </p>
                    
                 </section>
 
                 <!-- Contact information -->
                 <section>
-                    <h3>聯絡方式：</h3>
+                    <h3><?php echo $lang['contact_info']?>：</h3>
                     <p class="icon">
                         <i class="icon-envelope-alt"></i>
-                        drlaihoiming@gmail.com
+                       <?php echo $system['email']?>
                     </p>
                     <p class="icon">
                         <i class="icon-phone"></i>
-                        (852) 2889 6080 
+                            <?php echo $system['phone']?>
                     </p>
                     
                     <p class="icon">
                        <i class="icon-phone"></i>
-                        (852) 9020 8382
+                        <?php echo $system['phone2']?>
                     </p>
                 </section>
 
@@ -72,17 +71,16 @@ require_once 'init.php';
 
                 <!-- Opening hours -->
                 <section>
-                    <h3>工作時間：</h3>
+                    <h3><?php echo $lang['worktime']?>：</h3>
                     <p class="icon">
                         <i class="icon-time"></i>
-                        Monday - Friday <span class="opening">8:00 - 18:00</span><br />
-                        Saturday <span class="opening">8:00 - 14:00</span><br />
-                        Sunday <span class="opening">10:00 - 14:00</span><br />
+                        <?php echo $system['work_time']?>
+                        
                     </p>
                 </section>
                 
                  <section>
-                    <h3>Social media</h3>
+                   
                     <p class="icon">
                         <i class="icon-large icon-facebook-sign" style="margin-right:5px;color:blue"></i> 
                         <a href="#">黎凱明中醫診所</a>
@@ -99,36 +97,35 @@ require_once 'init.php';
                 <!-- Text and contact form -->
                 <section>
 
-                   <h3>立即預約 黎凱明註册中醫</h3>
- <p>內科 • 婦科 • 兒科 • 皮膚 • 運動創傷</p>
+                   <h3><?php echo $lang['book']?> - 黎凱明中醫</h3>
 
                     <hr />
 
                     <form action="#" id="contact_form" />
                     <div class="one_third top first">
-                        <label for="name">姓名:</label>
+                        <label for="name"><?php echo $lang['name']?>:</label>
                         <input name="name" id="name" type="text" />
                     </div>
                     
                     <div class="clearfix"></div>
                     
                     <div class="one_third top first">
-                        <label for="email">電話:</label>
+                        <label for="email"><?php echo $lang['tel']?>:</label>
                         <input name="tel" id="tel" type="text" />
                     </div>
                     <div class="clearfix"></div>
                     
                      <div class="one_third top first">
-                        <label for="email">Email:</label>
+                        <label for="email"><?php echo $lang['email']?>:</label>
                         <input name="email" id="email" type="email" />
                     </div>
                     <div class="clearfix"></div>
                     <div>
-                        <label for="message">Message:</label>
+                        <label for="message"><?php echo $lang['msg']?>:</label>
                         <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     </div>
                     <div>
-                        <input type="submit" value="發送" class="theme_button medium" />
+                        <input type="submit" value="<?php echo $lang['submit']?>" class="theme_button medium" />
                         <p class="status" />
                     </div>
                     </form>

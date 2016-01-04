@@ -1,4 +1,4 @@
-  <nav class="menu">
+  <nav  class="desktop">
               <ul>
 <?php
 
@@ -10,9 +10,9 @@
                    echo "<li class='down-menu'>";
 
                        if($item['type']=="page")
-                        echo "<a href='".$item['url']."'>".$item['title']."</a>";
+                        echo "<a href='".$item['url']."'>".$item[$current_lang.'_title']."</a>";
                         else if($item['type']=="sub"){
-                             echo "<a href='#'>".$item['title']."</a>";
+                             echo "<a href='#'>".$item[$current_lang.'_title']."</a>";
                          $srs = $db->query("SELECT* FROM menu where parent_id =".$item['id']);
                        if($srs){
                        $submenu = $srs->fetchAll();
@@ -20,7 +20,7 @@
                           echo "<ul>";
                               foreach ($submenu as $subitem){
                           
-                                         echo "<li ><a href='".$subitem['url']."'>".$subitem['title']."</a>";
+                                         echo "<li ><a href='".$subitem['url']."'>".$subitem[$current_lang.'_title']."</a>";
 
                                 }
                             echo "</ul>";
@@ -28,7 +28,7 @@
                        }  
                        }
                         else{
-                        echo "<a href='#'>".$item['title']."</a>";     
+                        echo "<a href='#'>".$item[$current_lang.'_title']."</a>";     
                           $rs = $db->query("SELECT* FROM ".$item['type']);   
                            if($rs){
                                    $subMenu = $rs->fetchAll();
@@ -37,7 +37,7 @@
                           
                                          echo "<li ><a href='".$item['url']."?id=".$subItem['id']."'>"
                                              
-                                             .$subItem[$item['type']]."</a>";
+                                             .$subItem[$current_lang.'_'.$item['type']]."</a>";
 
                                     }
                                     echo "</ul>";
@@ -53,7 +53,7 @@
                   }
  
 ?>
-
+                  <li> <a href="/?lang=chi">中文</a>|<a href="/?lang=eng">Eng</a></li>
     </ul>
             
           </nav>

@@ -9,11 +9,9 @@
 
                     <nav>
                         <ul>
-                            <li><a href="index.html">首頁</a></li>
-                            <li><a href="about.html">治療方法及價目</a></li>
-                            <li><a href="contact.html">疾病</a></li>
-                            <li><a href="portfolio-3col.html">醫案與專欄</a></li>
-                            <li><a href="blog.html">聯絡醫師</a></li>
+                            <li><a href="index.php"><?php echo $lang['home']?></a></li>
+                            <li><a href="pricing.php"><?php echo $lang['pricing']?></a></li>
+                            <li><a href="contact.php"><?php echo $lang['contact']?></a></li>
                         </ul>
                     </nav>
 
