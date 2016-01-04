@@ -63,11 +63,11 @@ $rs = $db->query("SELECT * FROM illness ");
 
               <?php foreach($illnesses as $key=>$ill)
 {if($key!=0)echo ",";
-echo  $ill[$current_lang.'_title'];
+echo  "<a href='illness.php?id=".$ill['id']."'>".$ill[$current_lang.'_title']."</a>";
 }
 ?>
                 </p>
-                <a href="#" class="big theme_button">
+                <a href="contact.php" class="big theme_button">
                     <i class="icon-phone" style="margin-right:10px;"></i>
                     (852)2889 6080</a>
             </div>
@@ -87,30 +87,26 @@ echo  $ill[$current_lang.'_title'];
                 <ul class="portfolio clearfix">
 
                     <li class="webdesign one_quarter">
-                        <a href="_/img/index1.jpg" class="fancybox_photo thumb">
+                        <a href="pricing.php" >
                             <img src="_/img/index1.jpg" alt="" />
-                            <div class="fade"><span><i class="icon-plus-sign"></i></span></div>
                         </a>
                     </li>
                     
                       <li class="webdesign one_quarter">
-                        <a href="_/img/index1.jpg" class="fancybox_photo thumb">
-                            <img src="_/img/index1.jpg" alt="" />
-                            <div class="fade"><span><i class="icon-plus-sign"></i></span></div>
+                        <a href="pricing.php" >
+                            <img src="_/img/index2.jpg" alt="" />
                         </a>
                     </li>
                     
                       <li class="webdesign one_quarter">
-                        <a href="_/img/index1.jpg" class="fancybox_photo thumb">
-                            <img src="_/img/index1.jpg" alt="" />
-                            <div class="fade"><span><i class="icon-plus-sign"></i></span></div>
+                        <a href="pricing.php" >
+                            <img src="_/img/index3.jpg" alt="" />
                         </a>
                     </li>
                     
                       <li class="webdesign one_quarter">
-                        <a href="_/img/index1.jpg" class="fancybox_photo thumb">
-                            <img src="_/img/index1.jpg" alt="" />
-                            <div class="fade"><span><i class="icon-plus-sign"></i></span></div>
+                        <a href="pricing.php" >
+                            <img src="_/img/index4.jpg" alt="" />
                         </a>
                     </li>
 

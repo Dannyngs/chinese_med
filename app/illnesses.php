@@ -35,7 +35,7 @@ $rs = $db->query("SELECT * FROM category where id =".$_GET['id']);
 {?>
       <li class="visual_identity illustrations one_third">
         <a href="illness.php?id=<?php echo  $ill['id'];?>" class="thumb">
-          <img src="<?php echo  $ill['image'];?>" alt="" />
+          <img src="<?php echo  $imgurl.$ill['image'];?>" alt="" />
           <div class="fade"><span><i class="icon-plus-sign"></i></span></div>
         </a>
         <h3><a href="illness.php?id=<?php echo  $ill['id'];?>"><?php echo  $ill[$current_lang.'_title'];?></a></h3>
