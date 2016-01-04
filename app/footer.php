@@ -5,7 +5,7 @@
             <div class="copyright">
                 <div class="row">
 
-                    <p> Design by Creation Media</p>
+                    <p> Design by<a target="blank" href="http://www.c-m.hk"> Creation Media</p>
 
                     <nav>
                         <ul>

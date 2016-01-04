@@ -33,7 +33,7 @@ $rs = $db->query("select * from lhm_chinese_med.case");
 {?>
       <li class="visual_identity illustrations one_third">
         <a href="case.php?id=<?php echo  $case['id'];?>" class="thumb">
-          <img src="<?php echo  $case['image'];?>" alt="" />
+          <img src="<?php echo  $imgurl.$case['image'];?>" alt="" />
           <div class="fade"><span><i class="icon-plus-sign"></i></span></div>
         </a>
         <h3><a href="case.php?id=<?php echo  $case['id'];?>"><?php echo  $case[$current_lang.'_title'];?></a></h3>
