@@ -3,8 +3,8 @@ require_once 'init.php';
 
 
 
-$rs = $db->query("select * from lhm_chinese_med.case");
-    $cases = $rs->fetchAll();
+$rs = $db->query("select * from lhm_chinese_med.column");
+    $columns = $rs->fetchAll();
 
 
 
@@ -29,15 +29,15 @@ $rs = $db->query("select * from lhm_chinese_med.case");
      
         
         
-       <?php  foreach($cases as $case)          
+       <?php  foreach($columns as $col)          
 {?>
       <li class="visual_identity illustrations one_third">
-        <a href="case.php?id=<?php echo  $case['id'];?>" class="thumb">
-          <img width="180px" src="<?php echo  $imgurl.$case['image'];?>" alt="" />
+        <a href="column.php?id=<?php echo  $col['id'];?>" class="thumb">
+          <img src="<?php echo  $imgurl.$col['image'];?>" alt="" />
           <div class="fade"><span><i class="icon-plus-sign"></i></span></div>
         </a>
-        <h3><a href="case.php?id=<?php echo  $case['id'];?>"><?php echo  $case[$current_lang.'_title'];?></a></h3>
-        <p><?php echo  $case[$current_lang.'_desc'];?></p>
+        <h3><a href="column.php?id=<?php echo  $col['id'];?>"><?php echo  $col[$current_lang.'_title'];?></a></h3>
+        <p><?php echo  $col[$current_lang.'_desc'];?></p>
       </li>
         <?php
 }
