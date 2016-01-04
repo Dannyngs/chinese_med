@@ -3,11 +3,11 @@ require_once 'init.php';
 
 
 
-//$rs = $db->query("SELECT * FROM illness where cat_id =1");
-//    $illnesses = $rs->fetchAll();
-//
-//foreach($illnesses as $ill)          
-//echo  $ill[$current_lang.'_title'];
+$rs = $db->query("SELECT * FROM illness where cat_id =".$_GET['id']);
+    $illnesses = $rs->fetchAll();
+
+$rs = $db->query("SELECT * FROM category where id =".$_GET['id']);
+    $category = $rs->fetch();
 
 ?>
 <?php require_once 'header.php' ?>
@@ -16,7 +16,7 @@ require_once 'init.php';
 </style>
 <section class="title box">
 
-  <h2>疾 病</h2>
+  <h2><?php echo $lang['illness']?></h2>
  
 </section>
 
@@ -26,58 +26,35 @@ require_once 'init.php';
 
   <!-- Portfolio items -->
   <section class="row">
-  <p class="break-menu"><a href="">疾 病</a> > 皮膚科</p>
+  <p class="break-menu"><a ><?php echo $lang['illness']?></a> ><?php echo $category[$current_lang.'_category']?></p>
     <ul class="portfolio filterable clearfix">
      
+        
+        
+       <?php  foreach($illnesses as $ill)          
+{?>
       <li class="visual_identity illustrations one_third">
-        <a href="#" class="thumb">
-          <img src="_/img/exp1.jpg" alt="" />
+        <a href="illness.php?id=<?php echo  $ill['id'];?>" class="thumb">
+          <img src="<?php echo  $ill['image'];?>" alt="" />
           <div class="fade"><span><i class="icon-plus-sign"></i></span></div>
         </a>
-        <h3><a href="#">湿疹</a></h3>
-        <p>湿疹是一种常见的过敏性皮肤病。指一系列持久和续发的皮疹，以发红，水肿，瘙痒和发干为表征，可伴有结痂、剥落、起泡、开裂、出血或渗血。<a href="#">Read more</a></p>
+        <h3><a href="illness.php?id=<?php echo  $ill['id'];?>"><?php echo  $ill[$current_lang.'_title'];?></a></h3>
+        <p><?php echo  $ill[$current_lang.'_desc'];?></p>
       </li>
-        
-         <li class="visual_identity illustrations one_third">
-        <a href="#" class="thumb">
-          <img src="_/img/exp1.jpg" alt="" />
-          <div class="fade"><span><i class="icon-plus-sign"></i></span></div>
-        </a>
-        <h3><a href="#">湿疹</a></h3>
-        <p>湿疹是一种常见的过敏性皮肤病。指一系列持久和续发的皮疹，以发红，水肿，瘙痒和发干为表征，可伴有结痂、剥落、起泡、开裂、出血或渗血。<a href="#">Read more</a></p>
-      </li>
+        <?php
+}
+ ?>
+      
         
         
-         <li class="visual_identity illustrations one_third">
-        <a href="#" class="thumb">
-          <img src="_/img/exp1.jpg" alt="" />
-          <div class="fade"><span><i class="icon-plus-sign"></i></span></div>
-        </a>
-        <h3><a href="#">湿疹</a></h3>
-        <p>湿疹是一种常见的过敏性皮肤病。指一系列持久和续发的皮疹，以发红，水肿，瘙痒和发干为表征，可伴有结痂、剥落、起泡、开裂、出血或渗血。<a href="#">Read more</a></p>
-      </li>
         
-        
-         <li class="visual_identity illustrations one_third">
-        <a href="#" class="thumb">
-          <img src="_/img/exp1.jpg" alt="" />
-          <div class="fade"><span><i class="icon-plus-sign"></i></span></div>
-        </a>
-        <h3><a href="#">湿疹</a></h3>
-        <p>湿疹是一种常见的过敏性皮肤病。指一系列持久和续发的皮疹，以发红，水肿，瘙痒和发干为表征，可伴有结痂、剥落、起泡、开裂、出血或渗血。<a href="#">Read more</a></p>
-      </li>
+     
         
       
         
 
     </ul>
-  <p class="pagetab text-center">
-         <a href="#"><i class="icon-caret-left"></i></a>
-         <a href="#">1</a>
-         <a href="#">2</a>
-         
-         <a href="#"><i class="icon-caret-right"></i></a>
-      </p> 
+  
   </section>
 
 

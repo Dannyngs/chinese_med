@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
 
     <!-- Page title -->
-    <title><?php echo $system['site_title'] ?></title>
+    <title><?php echo $system[$current_lang.'_site_title'] ?></title>
 
      <!-- build:css({.tmp,app}) /_/css/lib/html5bp.css -->
     <link rel="stylesheet" href="/_/css/foundation.css" />
@@ -56,50 +56,11 @@
         <header class="row clearfix">
 
             <h1>
-                <a href="index.html"><img src="_/img/logo.jpg" alt="Difference" /></a>
+                <a href="index.php"><img src="_/img/logo.jpg" alt="Difference" /></a>
             </h1>
-
-            <nav class="desktop">
-                <ul>
-                    <li>
-                        <a class="selected" href="#">首頁</a>
-
-                    </li>
-                    <li>
-                        <a href="price.html" >治療方法及價目</a>
-                    </li>
-
-
-                    <li>
-                        <a href="category.php">疾病</a>
-                        <ul>
-                            <li> <a href="category.php">保健</a></li>
-                            <li> <a href="category.php">食療</a></li>
-                            <li> <a href="category.php">疾病常識</a></li>
-
-                        </ul>
-                    </li>
-                    
-                    <li>
-                        <a href="category.php">藥案與專欄</a>
-                        <ul>
-                            <li> <a href="category.php">保健</a></li>
-                            <li> <a href="category.php">食療</a></li>
-                            <li> <a href="category.php">疾病常識</a></li>
-
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="contact.html">聯絡醫師</a></li>
-                     <li>
-                         <a href="#">繁</a>|<a href="#">ENG</a>
-                       
-                    </li>
-
-                </ul>
-
-            </nav>
+        <?php include_once 'nav.php' ?>
+           
+           
 
             <!-- Tablet navigation -->
             <nav class="mobile tablet"></nav>

@@ -39,6 +39,10 @@ $rs = $db->query("SELECT * FROM illness ");
                 <img src="_/img/banner3.jpg" alt="" />
                
             </li>
+              <li>
+                <img src="_/img/banner4.jpg" alt="" />
+               
+            </li>
            
         </ul>
 
@@ -55,7 +59,7 @@ $rs = $db->query("SELECT * FROM illness ");
                 <h1 class="text-center"><?php echo $system[$current_lang.'_home_title']?></h1>
                 <h2 class="text-center"><?php echo $system[$current_lang.'_home_content']?></h2>
                 
-                <p><b>治療:</b><br/>
+                <p><b><?php echo $lang['treament']?>:</b><br/>
 
               <?php foreach($illnesses as $key=>$ill)
 {if($key!=0)echo ",";
@@ -65,7 +69,7 @@ echo  $ill[$current_lang.'_title'];
                 </p>
                 <a href="#" class="big theme_button">
                     <i class="icon-phone" style="margin-right:10px;"></i>
-                    (00852)2889 6080</a>
+                    (852)2889 6080</a>
             </div>
         </section>
 
@@ -74,8 +78,8 @@ echo  $ill[$current_lang.'_title'];
         <section class="row">
 
             <div class="full">
-                <h2>治療方法</h2>
-                <p class="headline">黎醫師根據個別的情況運用經筋鬆解推拿療法丶痛症微電療法丶皮膚微電療法丶天然藥膏丶針灸丶中藥丶無痛頭針療法</p>
+                <h2><?php echo $lang['treament_method']?></h2>
+                <p class="headline"><?php echo $system[$current_lang.'_treament']?></p>
             </div>
 
             <!-- Touch enabled scrolling -->

@@ -3,23 +3,23 @@ require_once 'init.php';
 
 
 
-//$rs = $db->query("SELECT * FROM case where case =1");
-//    $illnesses = $rs->fetchAll();
-//
-//foreach($illnesses as $ill)          
-//echo  $ill[$current_lang.'_title'];
+$rs = $db->query("SELECT * FROM lhm_chinese_med.case where id =".$_GET['id']);
+    $case = $rs->fetch();
+
+
 
 ?>
 <?php require_once 'header.php' ?>
 
 <style type="text/css">
-    .title{ background: url('_/img/case-tit.jpg') repeat-x top;}
+    .title{ background: url('_/img/ill-tit.jpg') repeat-x top;}
 </style>
 <section class="title box">
 
-  <h2>醫案與專欄</h2>
+  <h2><?php echo $case[$current_lang.'_title']?></h2>
  
 </section>
+
 
 <div class="content_box">
 
@@ -32,7 +32,10 @@ require_once 'init.php';
 
       <!-- Article -->
       <section>
-          <p class="break-menu" style="margin-left:25px;"><a href="">醫案與專欄</a> ><a href=""> 醫案</a> > 醫案1</p>
+          <p class="break-menu" style="margin-left:25px;">
+              <a href="cases.php"> <?php echo $lang['case']?></a>>
+              <?php echo $case[$current_lang.'_title']?>
+          </p>
         <ul class="articles">
 
           <li class="single">
@@ -41,11 +44,9 @@ require_once 'init.php';
 
             <article>
 
-              <h3>醫案1</h3>
+              <h3><?php echo $case[$current_lang.'_title']?></h3>
              
-              <p>湿疹是一种常见的过敏性皮肤病。指一系列持久和续发的皮疹，以发红，水肿，瘙痒和发干为表征，可伴有结痂、剥落、起泡、开裂、出血或渗血。湿疹是一种常见的过敏性皮肤病。指一系列持久和续发的皮疹，以发红，水肿，瘙痒和发干为表征，可伴有结痂、剥落、起泡、开裂、出血或渗血。湿疹是一种常见的过敏性皮肤病。指一系列持久和续发的皮疹，以发红，水肿，瘙痒和发干为表征，可伴有结痂、剥落、起泡、开裂、出血或渗血。湿疹是一种常见的过敏性皮肤病。指一系列持久和续发的皮疹，以发红，水肿，瘙痒和发干为表征，可伴有结痂、剥落、起泡、开裂、出血或渗血。湿疹是一种常见的过敏性皮肤病。指一系列持久和续发的皮疹，以发红，水肿，瘙痒和发干为表征，可伴有结痂、剥落、起泡、开裂、出血或渗血。湿疹是一种常见的过敏性皮肤病。指一系列持久和续发的皮疹，以发红，水肿，瘙痒和发干为表征，可伴有结痂、剥落、起泡、开裂、出血或渗血。</p>
-                <span><img src="_/img/exp1.jpg"/><p>治療前</p></span>
-                <span><img src="_/img/exp1.jpg"/><p>治療後</p></span>
+              <p><?php echo $case[$current_lang.'_content']?></p>
              
 
             </article>
