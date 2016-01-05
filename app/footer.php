@@ -24,7 +24,7 @@
 </div>
 
  <!-- build:js(app) /_/js/main.js -->
- <script src="/_/bower_components/jquery/dist/jquery.min.js"></script>
+ <script src="/_/js/jquery.min.js"></script>
   <script src="/_/js/jquery.orbit-1.4.0.js"></script>
   <script src="/_/js/jquery.placeholder.min.js"></script>
   <script src="/_/js/jquery.fancybox-1.3.4.pack.js"></script>
