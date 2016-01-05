@@ -33,7 +33,7 @@
   <script src="/_/js/jquery.easing.min.js"></script>
   <script src="/_/js/jquery.refineslide.js"></script>
   <script src="/_/js/touch-scroll.js"></script>
-  <script src="/_/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/_/js/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script src="/_/js/script.js"></script>
 
