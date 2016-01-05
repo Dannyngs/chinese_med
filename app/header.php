@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="/_/css/font-awesome.css" />
     <link rel="stylesheet" href="/_/css/refineslide.css" />
     <link rel="stylesheet" href="/_/css/jquery.fancybox-1.3.4.css" />
+        <link rel="stylesheet" href="/_/bower_components/bootstrap/dist/css/bootstrap.css" />
+
      <!-- endbuild -->
     
    <!-- build:css({.tmp,app}) /_/css/site-styles.css -->

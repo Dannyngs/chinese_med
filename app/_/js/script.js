@@ -53,7 +53,9 @@ jQuery(document).ready(function ($) {
     'type': 'iframe'
   });
 
-
+$('.carousel').carousel({
+  interval: 2000
+})
 
   /* Contact form */
   $('#contact_form').submit(function () {

@@ -32,9 +32,9 @@ $rs = $db->query("select * from lhm_chinese_med.column");
        <?php  foreach($columns as $col)          
 {?>
       <li class="visual_identity illustrations one_third">
-        <a href="column.php?id=<?php echo  $col['id'];?>" class="thumb">
-          <img src="<?php echo  $imgurl.$col['image'];?>" alt="" />
-          <div class="fade"><span><i class="icon-plus-sign"></i></span></div>
+        <a href="column.php?id=<?php echo  $col['id'];?>" class="">
+          <img width="200px" src="<?php echo  $imgurl.$col['image'];?>" alt="" />
+         
         </a>
         <h3><a href="column.php?id=<?php echo  $col['id'];?>"><?php echo  $col[$current_lang.'_title'];?></a></h3>
         <p><?php echo  $col[$current_lang.'_desc'];?></p>

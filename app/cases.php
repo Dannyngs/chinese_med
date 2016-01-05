@@ -25,20 +25,18 @@ $rs = $db->query("select * from lhm_chinese_med.case");
 
   <!-- Portfolio items -->
   <section class="row">
-    <ul class="portfolio filterable clearfix">
      
         
         
        <?php  foreach($cases as $case)          
 {?>
-      <li class="visual_identity illustrations one_third">
-        <a href="case.php?id=<?php echo  $case['id'];?>" class="thumb">
-          <img width="180px" src="<?php echo  $imgurl.$case['image'];?>" alt="" />
-          <div class="fade"><span><i class="icon-plus-sign"></i></span></div>
+      <div class="visual_identity illustrations one_third">
+        <a href="case.php?id=<?php echo  $case['id'];?>" class="">
+          <img width="200px" src="<?php echo  $imgurl.$case['image'];?>" alt="" />
         </a>
         <h3><a href="case.php?id=<?php echo  $case['id'];?>"><?php echo  $case[$current_lang.'_title'];?></a></h3>
         <p><?php echo  $case[$current_lang.'_desc'];?></p>
-      </li>
+      </div>
         <?php
 }
  ?>
@@ -51,7 +49,7 @@ $rs = $db->query("select * from lhm_chinese_med.case");
       
         
 
-    </ul>
+    
   
   </section>
 
