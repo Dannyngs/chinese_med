@@ -101,25 +101,25 @@ echo  "<a href='illness.php?id=".$ill['id']."'>".$ill[$current_lang.'_title']."<
 
                     <li class="webdesign one_quarter">
                         <a href="pricing.php" >
-                            <img src="_/img/index1.jpg" alt="" />
+                            <img src="<?php echo $imgurl.$system['img1']?>" alt="" />
                         </a>
                     </li>
                     
                       <li class="webdesign one_quarter">
                         <a href="pricing.php" >
-                            <img src="_/img/index2.jpg" alt="" />
+                            <img src="<?php echo $imgurl.$system['img2']?>" alt="" />
                         </a>
                     </li>
                     
                       <li class="webdesign one_quarter">
                         <a href="pricing.php" >
-                            <img src="_/img/index3.jpg" alt="" />
+                            <img src="<?php echo $imgurl.$system['img3']?>" alt="" />
                         </a>
                     </li>
                     
                       <li class="webdesign one_quarter">
                         <a href="pricing.php" >
-                            <img src="_/img/index4.jpg" alt="" />
+                            <img src="<?php echo $imgurl.$system['img4']?>" alt="" />
                         </a>
                     </li>
 
