@@ -53,7 +53,8 @@
                   }
  
 ?>
-                  <li> <a href="/?lang=chi">中文</a>|</li><li> <a href="/?lang=eng">English</a></li>
+                  <li> <a href="/?lang=chi">中文</a>|</li>
+                  <li style="margin-left:0"> <a href="/?lang=eng">Eng</a></li>
     </ul>
             
           </nav>
