@@ -64,8 +64,7 @@
            
            
 
-            <!-- Tablet navigation -->
-            <nav class="mobile tablet"></nav>
+          
 
         </header>
     </div>
