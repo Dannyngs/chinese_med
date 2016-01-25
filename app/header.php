@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/_/css/font-awesome.css" />
     <link rel="stylesheet" href="/_/css/refineslide.css" />
     <link rel="stylesheet" href="/_/css/jquery.fancybox-1.3.4.css" />
-        <link rel="stylesheet" href="/_/js/bootstrap/dist/css/bootstrap.css" />
+ 
 
      <!-- endbuild -->
     
@@ -34,9 +34,7 @@
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     
-     <!-- build:js /_/js/lib/modernizr/modernizr.js -->
-        <script src="/_/bower_components/modernizr/dist/js/modernizr.js"></script>
-        <!-- endbuild -->
+    
     <!--[if lt IE 9 ]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <![endif]-->
