@@ -38,15 +38,7 @@ require_once 'init.php';
             <!-- Sidebar -->
             <div class="left_sidebar sidebar clearfix">
 
-                <!-- Offices -->
-                <section>
-                    <h3><?php echo $lang['address']?>：</h3>
-                    <p class="icon">
-                        <i class="icon-map-marker"></i>
-                      <?php echo $system[$current_lang.'_address']?>
-                    </p>
-                   
-                </section>
+              
 
                 <!-- Contact information -->
                 <section>
@@ -93,13 +85,20 @@ require_once 'init.php';
 
             <!-- Main column -->
             <div class="main_column two_thirds">
-
+  <!-- Offices -->
+                <section>
+                    <h3><?php echo $lang['address']?>：</h3>
+                    <p class="icon">
+                      <?php echo $system[$current_lang.'_address']?>
+                    </p>
+                   
+                </section>
                 <!-- Text and contact form -->
                 <section>
 
                    <h3><?php echo $lang['book']?> - 黎凱明中醫</h3>
 
-                    <hr />
+                   
 
                     <form action="#" id="contact_form" />
                     <div class="one_third top first">
