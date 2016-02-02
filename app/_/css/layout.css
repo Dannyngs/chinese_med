@@ -299,11 +299,12 @@ nav.mobile {
 }
 @media only screen and (max-width: 479px) {
   nav.mobile {
-    line-height: 100px;
+    line-height: 50px;
     vertical-align: middle;
     display: block;
     background: #f7f7f7;
     text-align: center;
+    
   }
 }
 nav.mobile select {
@@ -676,6 +677,7 @@ i.black.big {
   .slider ul.content_slider .rs-arrows {
     position: static;
   }
+  
 }
 .title {
   height: 180px;
@@ -1754,3 +1756,8 @@ div.orbit-wrapper div.slider-nav span.left {
 
 .pagetab a{display:inline-block;padding: 5px;color:darkblue;}
 .pagetab a:hover{color:#C09500}
+
+.mobile.box option:nth-last-child(1),.mobile.box option:nth-last-child(2){display:none;}
+
+.mylist{margin:10px 0 0 0}.mylist li{list-style: none;display: inline-block}.mylist li a{padding: 0 10px;
+    line-height: 25px; }

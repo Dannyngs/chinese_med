@@ -69,6 +69,11 @@
 
 
     <!-- Mobile navigation -->
-    <nav class="mobile box"></nav>
+    <nav class="mobile box">
+      <ul class="mylist">
+        <li > <a href="/?lang=chi">中文</a>|</li>
+        <li style="margin-left:0"> <a href="/?lang=eng">Eng</a></li> 
+       </ul>
+    </nav>
 
 
