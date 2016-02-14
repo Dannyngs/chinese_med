@@ -57,7 +57,7 @@ $rs = $db->query("SELECT * FROM illness ");
                 <p><b><?php echo $lang['treament']?>:</b><br/>
 
               <?php foreach($illnesses as $key=>$ill)
-{if($key!=0)echo ",";
+{if($key!=0)echo "<a>•</a> ";
 echo  "<a href='illness.php?id=".$ill['id']."'>".$ill[$current_lang.'_title']."</a>";
 }
 ?>
