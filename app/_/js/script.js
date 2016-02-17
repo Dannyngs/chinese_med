@@ -146,12 +146,15 @@ jQuery(document).ready(function ($) {
 
     a = $(this).children('a');
     selected = ( a.hasClass('selected') ) ? 'selected="selected"' : '';
+     
     intend = ( $(this).parents('li').length > 0 ) ? '&nbsp;&nbsp;' : '';
     $mobile_nav.append('<option value="' + a.attr('href') + '" ' + selected + '>' + intend + a.text() + '</option>');
 
   });
   $('nav.mobile select').change(function () {
+     // alert($(this).find('option:selected').attr('value'))
     window.location = $(this).find('option:selected').attr('value');
+      
   });
 
 
