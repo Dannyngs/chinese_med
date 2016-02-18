@@ -28,12 +28,7 @@ h4 {
   font-family: "Noticia Text", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   margin-top: 10px;
 }
-h1 a,
-h2 a,
-h3 a,
-h4 a {
-  color: inherit;
-}
+
 h1{font-size: 24px;}
 h2 {
   font-size: 18px;
@@ -48,12 +43,12 @@ h4 {
   margin-bottom: 20px;
 }
 a,
-a:visited,
+
 a:focus {
-  color: #c09500;
+color: #c09500;
 }
 a:hover {
-  color: #c09500;
+color: #c09500;
   text-decoration: underline;
 }
 a img {
