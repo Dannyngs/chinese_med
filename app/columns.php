@@ -15,7 +15,7 @@ $rs = $db->query("select * from lhm_chinese_med.column order by sort");
 </style>
 <section class="title box">
 
-  <h2><?php echo $lang['case']?></h2>
+  <h2><?php echo $lang['column']?></h2>
  
 </section>
 

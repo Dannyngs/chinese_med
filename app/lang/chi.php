@@ -8,9 +8,9 @@ Language: Chinese
 $lang = array();
  
 $lang['treament'] = "治療";
-$lang['illness'] = '疾病';
+$lang['illness'] = '醫案';
 $lang['treament_method'] = '治療方法';
-$lang['case'] = '醫案';
+$lang['case'] = '疾病';
 $lang['column'] = '專欄';
  $lang['pricing'] = '治療及價目';
  $lang['home'] = '首頁';

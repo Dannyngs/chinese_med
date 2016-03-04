@@ -8,9 +8,9 @@ Language: English
 $lang = array();
  
 $lang['treament'] = 'Treament';
-$lang['illness'] = 'Illness';
+$lang['illness'] = 'Cases';
 $lang['treament_method'] = 'Treament Methods';
-$lang['case'] = 'Cases';
+$lang['case'] = 'Illness';
 $lang['column'] = 'Columns';
   $lang['pricing'] = 'Treament & Pricing';
  $lang['home'] = 'Home';
