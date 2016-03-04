@@ -3,7 +3,7 @@ require_once 'init.php';
 
 
 
-$rs = $db->query("select * from lhm_chinese_med.case");
+$rs = $db->query("select * from lhm_chinese_med.case order by sort");
     $cases = $rs->fetchAll();
 
 

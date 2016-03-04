@@ -35,7 +35,7 @@
                         else{
                              
                         echo "<a href='#'>".$item[$current_lang.'_title']."</a>";     
-                          $rs = $db->query("SELECT* FROM ".$item['type']);   
+                          $rs = $db->query("SELECT* FROM ".$item['type']." order by sort");   
                            if($rs){
                                    $subMenu = $rs->fetchAll();
                                     echo "<ul>";

@@ -3,7 +3,7 @@ require_once 'init.php';
 
 
 
-$rs = $db->query("select * from lhm_chinese_med.column");
+$rs = $db->query("select * from lhm_chinese_med.column order by sort");
     $columns = $rs->fetchAll();
 
 

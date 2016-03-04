@@ -3,7 +3,7 @@ require_once 'init.php';
 
 
 
-$rs = $db->query("SELECT * FROM illness where cat_id =".$_GET['id']);
+$rs = $db->query("SELECT * FROM illness where cat_id =".$_GET['id']." order by sort");
     $illnesses = $rs->fetchAll();
 
 $rs = $db->query("SELECT * FROM category where id =".$_GET['id']);
