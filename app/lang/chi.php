@@ -7,7 +7,7 @@ Language: Chinese
  
 $lang = array();
  
-$lang['treament'] = "治療";
+$lang['treament'] = "醫案";
 $lang['illness'] = '醫案';
 $lang['treament_method'] = '治療方法';
 $lang['case'] = '疾病';
