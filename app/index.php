@@ -3,7 +3,7 @@ require_once 'init.php';
 
 
 
-$rs = $db->query("SELECT * FROM illness ");
+$rs = $db->query("SELECT * FROM illness order by sort");
     $illnesses = $rs->fetchAll();
 
 
